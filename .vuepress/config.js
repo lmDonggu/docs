@@ -28,6 +28,14 @@ module.exports = {
   },
   "theme": "reco",
   "themeConfig": {
+    // 代码主题
+    // * support for
+    // * 'default'
+    // * 'funky'
+    // * 'okaidia'
+    // * 'solarizedlight'
+    // * 'tomorrow'
+    "codeTheme": "tomorrow",
     // 多语言配置处2
     "locales": {
       "/": {
@@ -86,10 +94,10 @@ module.exports = {
         "theme",
         "plugin",
         "api"
-      ]
+      ],
     },
     //在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
-    // "subSidebar": 'auto',
+    "subSidebar": 'auto',
     "type": "blog",
     // 博客配置
     "blogConfig": {
@@ -169,5 +177,30 @@ module.exports = {
         }
       }
     ],
+    // vuepress-plugin-go-top 悬挂喵作为返回顶部按钮
+    [
+      "go-top"
+    ],
+    // 自动侧边栏插件 先不用
+    // ["vuepress-plugin-auto-sidebar"],
+    // 本选项开启了一个用于刷新内容的弹窗。这个弹窗将会在站点有内容更新时显示出来，并提供了一个 refresh 按钮，允许用户立即刷新内容。
+    ['@vuepress/pwa', 
+      {
+        serviceWorker: true,
+        updatePopup: {
+            message: "发现新内容可用",
+            buttonText: "刷新"
+        }
+      }
+    ],
+    // 复制弹窗插件
+    ["vuepress-plugin-nuggets-style-copy", 
+      {
+        copyText: "复制代码",
+        tip: {
+            content: "复制成功!"
+        }
+      }
+    ]
   ]
 }

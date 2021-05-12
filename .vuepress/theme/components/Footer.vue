@@ -1,7 +1,7 @@
 <template>
   <div class="footer-wrapper">
 
-    <!-- 显示vuepress theme 版本号 -->
+    <!-- 主题版本vuepress theme 版本号 -->
     <span>
       <reco-icon icon="reco-theme" />
       <a target="blank" href="https://vuepress-theme-reco.recoluan.com">{{`vuepress-theme-reco@${version}`}}</a>
@@ -13,18 +13,17 @@
       <a :href="$themeConfig.recordLink || '#'">{{ $themeConfig.record }}</a>
     </span> -->
 
-    <!-- 版权 -->
+    <!-- 技术支持 -->
     <span>
-        <reco-icon icon="reco-copyright" />
         <span>Powered by </span>
         <a href="https://github.com/vuejs/vuepress" target="_blank">VuePress</a>
         <span> | </span>
         <a href="https://github.com/vuepress-reco/vuepress-theme-reco" target="_blank">vuepress-theme-reco</a>
     </span>
 
-    <!-- 作者和博客建设时间 -->
+    <!-- 版权声明 -->
     <span>
-      <reco-icon icon="reco-other" />
+      <reco-icon icon="reco-copyright" />
       <a>
         <span v-if="$themeConfig.author">{{ $themeConfig.author }}</span>
         &nbsp;&nbsp;
