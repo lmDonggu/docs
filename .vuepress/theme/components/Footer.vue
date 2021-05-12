@@ -2,10 +2,10 @@
   <div class="footer-wrapper">
 
     <!-- 显示vuepress theme 版本号 -->
-    <!-- <span>
+    <span>
       <reco-icon icon="reco-theme" />
       <a target="blank" href="https://vuepress-theme-reco.recoluan.com">{{`vuepress-theme-reco@${version}`}}</a>
-    </span> -->
+    </span>
 
     <!-- ICP 备案文案 -->
     <!-- <span v-if="$themeConfig.record">
@@ -13,9 +13,18 @@
       <a :href="$themeConfig.recordLink || '#'">{{ $themeConfig.record }}</a>
     </span> -->
 
+    <!-- 版权 -->
+    <span>
+        <reco-icon icon="reco-copyright" />
+        <span>Powered by </span>
+        <a href="https://github.com/vuejs/vuepress" target="_blank">VuePress</a>
+        <span> | </span>
+        <a href="https://github.com/vuepress-reco/vuepress-theme-reco" target="_blank">vuepress-theme-reco</a>
+    </span>
+
     <!-- 作者和博客建设时间 -->
     <span>
-      <reco-icon icon="reco-copyright" />
+      <reco-icon icon="reco-other" />
       <a>
         <span v-if="$themeConfig.author">{{ $themeConfig.author }}</span>
         &nbsp;&nbsp;
