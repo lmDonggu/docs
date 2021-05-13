@@ -1,5 +1,5 @@
 module.exports = {
-  "title": "小冬菇 | Blog",
+  "title": "小冬菇",
   // 本地注释，编译取消注释
   "base": "/docs/",
   "description": "MyBlog",
@@ -88,14 +88,15 @@ module.exports = {
         ]
       }
     ],
-    "sidebar": {
-      "/docs/theme-reco/": [
-        "",
-        "theme",
-        "plugin",
-        "api"
-      ],
-    },
+    // 手动侧边栏 启用自动侧边栏需将其注释掉避免冲突
+    // "sidebar": {
+    //   "/docs/theme-reco/": [
+    //     "",
+    //     "theme",
+    //     "plugin",
+    //     "api"
+    //   ],
+    // },
     //在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
     "subSidebar": 'auto',
     "type": "blog",
@@ -182,7 +183,29 @@ module.exports = {
       "go-top"
     ],
     // 自动侧边栏插件 先不用
-    // ["vuepress-plugin-auto-sidebar"],
+    ["vuepress-plugin-auto-sidebar",
+      {
+        // sort(排序) `asc`、`desc`、`created_time_asc`、`created_time_desc`
+        sort: {
+          mode: "asc",
+          readmeFirst: true,
+        },
+        title: {
+          mode: "titlecase",
+          map: {}
+        },
+        // sidebarDepth（标题深度）
+        sidebarDepth: 1,
+        // collapse（折叠）
+        collapse: {
+          open: false,
+          collapseList: [],
+          uncollapseList: []
+        },
+        // ignore（忽略）
+        ignore: []
+      }
+    ],
     // 本选项开启了一个用于刷新内容的弹窗。这个弹窗将会在站点有内容更新时显示出来，并提供了一个 refresh 按钮，允许用户立即刷新内容。
     ['@vuepress/pwa', 
       {
@@ -196,11 +219,31 @@ module.exports = {
     // 复制弹窗插件
     ["vuepress-plugin-nuggets-style-copy", 
       {
-        copyText: "复制代码",
+        copyText: "复制",
         tip: {
-            content: "复制成功!"
+            content: "复制代码成功!"
         }
       }
+    ],
+    // 在您的 Vuepress 中添加美丽的丝带！
+    ["ribbon",
+      {
+         size: 90, // width of the ribbon, default: 90
+         opacity: 0.2, // opacity of the ribbon, default: 0.3
+         zIndex: -1, // z-index property of the background, default: -1
+      },
+    ],
+    // 在您的 vuepress 中添加可爱的光标效果！
+    ['cursor-effects',
+      {
+        // size of the particle, default: 2
+        size: 2, 
+        // shape of the particle, default: 'star'
+        // shape: ['star' | 'circle'],
+        shape: ['circle'],
+        // z-index property of the canvas, default: 999999999
+        zIndex: 999999999,
+      },
     ]
   ]
 }
