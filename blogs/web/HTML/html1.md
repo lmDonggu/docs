@@ -1,7 +1,7 @@
 ---
 title: WEB 标准
 description: "能够写出基本的html页面（里面包含图片、链接、文字等网页元素标签）"
-date: 2021-05-12
+date: 2021-05-01
 categories:
  - 前端基础
 tags:

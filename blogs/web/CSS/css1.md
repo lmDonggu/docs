@@ -1,7 +1,7 @@
 ---
 title: CSS初始
 description: "理解css 的目的作用，三种引入方式；应用css三种引用方式的书写，通过样式规则给标签添加简单的样式"
-date: 2021-05-15
+date: 2021-05-04
 categories:
  - 前端基础
 tags:

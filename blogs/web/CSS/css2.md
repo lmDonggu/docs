@@ -1,7 +1,7 @@
 ---
 title: CSS基础选择器
 description: "理解能说出选择器的作用,id选择器和类选择器的区别；能够使用基础选择器给页面元素添加样式"
-date: 2021-05-15
+date: 2021-05-05
 categories:
  - 前端基础
 tags:
