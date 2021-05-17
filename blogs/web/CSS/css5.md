@@ -133,7 +133,7 @@ table{ border-collapse:collapse; }
 | 3个值    | padding：上内边距   左右内边距   下内边距；     |
 | 4个值    | padding: 上内边距 右内边距 下内边距 左内边距 ； |
 
-:bell:逆时针方向，top=>right=>bottom=>left
+:bell:顺时针方向，top=>right=>bottom=>left
 
 ### 4.3 内盒尺寸计算（元素实际大小）
 
