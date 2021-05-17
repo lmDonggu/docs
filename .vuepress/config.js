@@ -67,7 +67,7 @@ module.exports = {
         "icon": "reco-date"
       },
       {
-        "text": "说明",
+        "text": "关于我",
         "icon": "reco-message",
         "items": [
           {
