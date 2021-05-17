@@ -135,7 +135,7 @@ table{ border-collapse:collapse; }
 
 :bell:逆时针方向，top=>right=>bottom=>left
 
-## 4.3 内盒尺寸计算（元素实际大小）
+### 4.3 内盒尺寸计算（元素实际大小）
 
 - 宽度
   Element Height = content height + padding + border （Height为内容高度）
