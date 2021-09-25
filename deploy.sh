@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+# 部署到page
+
 # 生成静态文件
 npm run build
 # 进入静态文件的文件夹
