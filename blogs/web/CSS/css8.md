@@ -308,4 +308,5 @@ css样式
 3. 我们4个边框都要写， 只保留需要的边框颜色，其余的不能省略，都改为 transparent 透明就好了
 4. 为了照顾兼容性 低版本的浏览器，加上 font-size: 0; line-height: 0;
 
+![](~@src/7.jpg)
 :peach::peach::peach:

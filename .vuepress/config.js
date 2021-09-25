@@ -152,6 +152,13 @@ module.exports = {
   "markdown": {
     "lineNumbers": true
   },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@src': '/.vuepress/public/src'
+      }
+    }
+  },
   plugins: [
     // 在您的 vuepress 中添加动态标题！
     [
